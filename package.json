@@ -1,0 +1,8 @@
+{
+  "name": "blog-writing-guide",
+  "version": "1.0.0",
+  "description": "블로그 콘텐츠 작성 가이드",
+  "scripts": {
+    "dev": "npx http-server -p 8080 -o"
+  }
+}
