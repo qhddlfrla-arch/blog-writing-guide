@@ -1,0 +1,29 @@
+title: 블로그 콘텐츠 작성 가이드
+description: 플랫폼별 블로그 글 작성을 위한 체계적인 가이드라인과 템플릿
+theme: jekyll-theme-cayman
+
+# GitHub repository
+repository: YOUR_USERNAME/blog-writing-guide
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: 가이드라인
+    url: /guidelines/
+  - title: 템플릿
+    url: /templates/
+  - title: 예제
+    url: /examples/
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Exclude from processing
+exclude:
+  - README.md
+  - .gitignore
+  - .git/
