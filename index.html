@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그 콘텐츠 작성 가이드</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .card li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .card li:last-child {
+            border-bottom: none;
+        }
+        .card a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s;
+        }
+        .card a:hover {
+            color: #667eea;
+            padding-left: 10px;
+        }
+        .table-container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+        .principles {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .principles h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        .principles h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .principles ul {
+            padding-left: 20px;
+        }
+        .principles li {
+            margin-bottom: 8px;
+        }
+        .emoji {
+            font-size: 1.2em;
+        }
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 블로그 콘텐츠 작성 가이드</h1>
+            <p class="subtitle">플랫폼별 블로그 글 작성을 위한 체계적인 가이드라인과 템플릿</p>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h2>📖 가이드라인</h2>
+                <ul>
+                    <li><a href="guidelines/네이버블로그_작성규칙.md">네이버 블로그 작성규칙</a></li>
+                    <li><a href="guidelines/티스토리_작성규칙.md">티스토리 작성규칙</a></li>
+                    <li><a href="guidelines/애드센스_작성규칙.md">애드센스 작성규칙</a></li>
+                    <li><a href="guidelines/브랜드블로그_작성규칙.md">브랜드 블로그 작성규칙</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>📝 템플릿</h2>
+                <ul>
+                    <li><a href="templates/네이버블로그_템플릿.txt">네이버 블로그 템플릿</a></li>
+                    <li><a href="templates/티스토리_템플릿.md">티스토리 템플릿</a></li>
+                    <li><a href="templates/애드센스_템플릿.md">애드센스 템플릿</a></li>
+                    <li><a href="templates/브랜드블로그_템플릿.md">브랜드 블로그 템플릿</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>💡 예제</h2>
+                <ul>
+                    <li><a href="examples/네이버_난방비절감_예제.txt">네이버: 난방비 절감</a></li>
+                    <li><a href="examples/티스토리_공기청정기_예제.md">티스토리: 공기청정기 비교</a></li>
+                    <li><a href="examples/애드센스_홈오피스_예제.md">애드센스: 홈오피스 꾸미기</a></li>
+                    <li><a href="examples/브랜드_쇼핑몰CS_예제.md">브랜드: 쇼핑몰 CS 전략</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>📘 사용법</h2>
+                <ul>
+                    <li><a href="USAGE_GUIDE.md">상세 사용 가이드</a></li>
+                    <li><a href="README.md">프로젝트 소개</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h2 style="color: #667eea; margin-bottom: 20px;">🎯 플랫폼별 차이점</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>플랫폼</th>
+                        <th>마크다운</th>
+                        <th>태그 형식</th>
+                        <th>분량</th>
+                        <th>특징</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>네이버</strong></td>
+                        <td>❌ 절대 금지</td>
+                        <td>#태그1 #태그2</td>
+                        <td>2,500~3,500자</td>
+                        <td>PLAIN TEXT</td>
+                    </tr>
+                    <tr>
+                        <td><strong>티스토리</strong></td>
+                        <td>✅ 필수 (## 중심)</td>
+                        <td>태그1, 태그2</td>
+                        <td>2,500~3,500자</td>
+                        <td>마크다운 활용</td>
+                    </tr>
+                    <tr>
+                        <td><strong>애드센스</strong></td>
+                        <td>✅ 필수 (## 중심)</td>
+                        <td>#태그1 #태그2</td>
+                        <td>3,000~3,500자</td>
+                        <td>SEO 최적화</td>
+                    </tr>
+                    <tr>
+                        <td><strong>브랜드</strong></td>
+                        <td>✅ 필수 (## 중심)</td>
+                        <td>태그1, 태그2</td>
+                        <td>2,500~3,500자</td>
+                        <td>브랜드 톤앤매너</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="principles">
+            <h2>📋 공통 작성 원칙</h2>
+            
+            <h3>✅ 반드시 지켜야 할 것</h3>
+            <ul>
+                <li>각 섹션 <strong>반드시</strong> 6-8문장 이상 심층 작성</li>
+                <li>피상적 설명 배제, 구체적인 수치/통계/팁 포함</li>
+                <li>팩트 기반, 객관적 정보만 활용</li>
+                <li>허위 경험담 절대 금지 ("제가 직접 써보니", "어제 다녀온" 등)</li>
+                <li>후킹 도입부 필수 (수치, 통계, 흥미로운 질문)</li>
+                <li>한 문단 3-5문장으로 구성</li>
+                <li>핵심 요약(마무리) + 썸네일 아이디어 2개 필수</li>
+            </ul>
+
+            <h3>❌ 절대 금지</h3>
+            <ul>
+                <li>가짜 체험담, 허위 사용 후기</li>
+                <li>과장된 정보</li>
+                <li>의미 없는 문장 반복 (늘어쓰기)</li>
+                <li>피상적인 설명으로 분량 채우기</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Made with ❤️ for Better Blog Content</p>
+            <p><a href="https://github.com/qhddlfrla-arch/blog-writing-guide" style="color: white;">GitHub Repository</a></p>
+        </footer>
+    </div>
+</body>
+</html>
